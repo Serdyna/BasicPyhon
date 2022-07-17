@@ -1,0 +1,55 @@
+result = int()
+
+run = int()
+
+answear = str()
+
+attempt = int()
+
+run = 1
+
+attempt = 1
+
+print("Hello, I am a small program to help you find and square two biggest numbers out of any three numbers you want.")
+
+while run == 1:
+
+    
+
+    print("This the number " , attempt , " calculation for you")
+
+    x = int(input("Enter First Number: "))
+    y = int(input("Enter Second Number: "))
+    z = int(input("Enter Third Number: "))
+
+
+
+
+    if ((x > z) and (y > z)) or ((x == y) and (x > z)) or ((x == z) and (x < y)):
+        result = (x**2) + (y**2)
+    
+    elif ((x > y) and (z > y)) or ((x == z) and (x > y)) or ((y == z) and (z < x)):
+        result = (x**2) + (z**2)
+
+    elif ((y > x) and (z > x)) or ((z == y) and (z > x)) or ((x == y) and (x < z)):
+        result = (y**2) + (z**2)
+
+    else:
+        result = (x**2) + (y**2)
+    
+
+    
+    print (result)
+
+    answear = input("Do you want keep calculating ? ")
+    
+    if answear == "yes":
+        run = 1
+        attempt = attempt + 1
+
+    else:
+        run = 0
+
+
+else:
+    print("Goodbye")
